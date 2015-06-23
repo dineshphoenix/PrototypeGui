@@ -22,15 +22,15 @@ def process():
     
 
     #Copy the Apk in the desired location
-    subprocess.call (['cp', FilePath, '/home/dinesh010/bin/Temp'])
+    subprocess.call (['cp', FilePath, './Temp'])
     
     #Run the Script
-    os.chdir('/home/dinesh010/bin')
+    #os.chdir('/home/dinesh010/bin')
     BashCommand1 = "SampleScript.sh"
     os.system(BashCommand1)
 
     #Check if the csv file is created
-    os.chdir('/home/dinesh010/bin/B')
+    os.chdir('./B')
     
     if os.path.isfile("myfile") is True:
         popup = Tk()  #create an object
@@ -54,44 +54,44 @@ def process():
         button11.configure(command = ViewFile9, bg = 'black', fg = 'yellow')
 
 def ViewFile1():
-    BashCommand = "gnome-open /home/dinesh010/bin/FolderStruct.pdf "
+    BashCommand = "gnome-open ./FolderStruct.pdf "
     os.system(BashCommand) 
 
 def ViewFile2():
-    BashCommand = "gnome-open /home/dinesh010/bin/DirectedPKDG.pdf "
+    BashCommand = "gnome-open ./DirectedPKDG.pdf "
     os.system(BashCommand) 
  
 
 def ViewFile3():
-    BashCommand = "gnome-open /home/dinesh010/bin/FolderStruct_scissored.pdf "
+    BashCommand = "gnome-open ./FolderStruct_scissored.pdf "
     os.system(BashCommand) 
 
 def ViewFile4():
-    BashCommand = "gnome-open /home/dinesh010/bin/FolderStruct_scissored.pdf "
+    BashCommand = "gnome-open ./FolderStruct_scissored.pdf "
     os.system(BashCommand) 
 
 
 def ViewFile5():
-    BashCommand = "gnome-open /home/dinesh010/bin/FolderStruct_scissored.pdf "
+    BashCommand = "gnome-open ./FolderStruct_scissored.pdf "
     os.system(BashCommand) 
  
 
 def ViewFile6():
-    BashCommand = "gnome-open /home/dinesh010/bin/FolderStruct_scissored.pdf "
+    BashCommand = "gnome-open ./FolderStruct_scissored.pdf "
     os.system(BashCommand) 
 
     
 def ViewFile7():
-    BashCommand = "gnome-open /home/dinesh010/bin/ClustersProduced.pdf "
+    BashCommand = "gnome-open ./ClustersProduced.pdf "
     os.system(BashCommand) 
 
 
 def ViewFile8():
-    BashCommand = "gnome-open /home/dinesh010/bin/AdLibModule.pdf "
+    BashCommand = "gnome-open ./AdLibModule.pdf "
     os.system(BashCommand) 
 
 def ViewFile9():
-    BashCommand = "gnome-open /home/dinesh010/bin/Concerns.pdf "
+    BashCommand = "gnome-open ./Concerns.pdf "
     os.system(BashCommand) 
  
 
